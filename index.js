@@ -1,7 +1,6 @@
 const express = require('express');
 const useragent = require('useragent');
 const app = express();
-const port = process.env.PORT || 3000;
 
 // Replace these with your actual store URLs
 const ANDROID_APP_URL = 'https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en';
@@ -357,6 +356,3 @@ app.get('/', (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`QR Redirect backend listening at http://localhost:${port}`);
-});
