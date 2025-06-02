@@ -4,8 +4,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Replace these with your actual store URLs
-const ANDROID_APP_URL = 'https://play.google.com/store/apps/details?id=com.example.yourapp';
-const IOS_APP_URL = 'https://apps.apple.com/app/id123456789';
+const ANDROID_APP_URL = 'https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en';
+const IOS_APP_URL = 'https://apps.apple.com/th/app/youtube/id544007664?l=th';
 
 app.get('/', (req, res) => {
     const agent = useragent.parse(req.headers['user-agent']);
