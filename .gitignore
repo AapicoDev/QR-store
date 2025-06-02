@@ -53,3 +53,6 @@ build/
 
 # Other
 .env.*
+
+# Local Netlify folder
+.netlify
