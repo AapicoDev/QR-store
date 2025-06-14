@@ -1,6 +1,7 @@
 const express = require('express');
 const useragent = require('useragent');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Replace these with your actual store URLs
 const ANDROID_APP_URL = 'https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en';
@@ -356,5 +357,7 @@ app.get('/', (req, res) => {
     }
 });
 
-module.exports = app;
-
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
